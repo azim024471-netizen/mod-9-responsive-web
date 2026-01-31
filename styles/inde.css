@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+ font-style: normal;
+}
+
+/* shared styles */
+
+.flex{
+    display: flex;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.section-tittle{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+
+    border: none; border-radius: 8px;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 120px;
+}
+/* dark 01 */
+
+/* dark 02 */
+.gray{
+    color:#424242;
+}
+
+/* dark 03 */
+
+.light-gray{
+    color: #727272;
+}
+
+.text-primary{
+    color: #FF900E;
+}
+
+/* header */
+.navbar{
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-items{
+    list-style: none;
+    /* justify-content: space-between */
+   margin-right: 40px;
+}
+
+.brand{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.nav-links{
+    text-decoration: none;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* styles for banner */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-tittle{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: 1rem;
+    line-height: 20px;
+}
+.banner-img{
+    width: 100%;
+}
+
+/* features  styles */
+.teams{
+    align-items: center;
+}
+ 
+.teams-img-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+gap: 24px;
+}
+.features{
+   margin-left: 130px;
+   max-width: 530px;
+}
+
+#Quick{
+    font-weight: 500;
+}
+
+/* media qurey for small device */
+
+@media screen and (max-width:576px) {
+
+    .navbar, 
+    .nav-links,
+    .teams
+    {
+        flex-direction: column;
+    }
+    .teams-img-cont{
+   
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.features{
+    margin-left: 20px;
+}
+
+
+}
+
+/* media qurey for mediam device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams
+    {
+        flex-direction: column;
+    }
+.features{
+    margin: 50px auto;
+}
+}
