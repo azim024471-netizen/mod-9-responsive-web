@@ -64,7 +64,7 @@ main>section{
 }
 .nav-items{
     list-style: none;
-    /* justify-content: space-between */
+   
    margin-right: 40px;
 }
 
@@ -118,7 +118,43 @@ gap: 24px;
 #Quick{
     font-weight: 500;
 }
-
+/* styles for exprience */
+.exprience{
+    display: flex;
+    gap: 146px;
+    
+}
+.exp-tittle{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+.exp-card{
+    padding: 30px;
+    border: none;
+    box-shadow:0 4px 30px 0 rgba(0, 0, 0, 0.06) ;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.exp-card .card-tittle{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#badge{
+    padding: 45px 42px; 
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -92px;
+}
+.badge-time{
+    font-size: 4rem;
+    font-weight: ;
+    line-height: 70px;
+    color: white;
+}
 /* style for fact section */
 .facts-container{
     display: grid;
@@ -168,13 +204,25 @@ gap: 24px;
 }
 
 
+/* footer styles */
+.footer{ max-width: 1440px;
+    margin: 130px auto 216px auto;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    padding-top:39px ; 
+    padding-bottom:40px ;
+    font-size: 1.25rem;
+    color: rgba(66, 66, 66, 1);
+}
 /* media qurey for small device */
 
 @media screen and (max-width:576px) {
 
     .navbar, 
     .nav-links,
-    .teams
+    .teams,
+    .exprience
      
     {
         flex-direction: column;
@@ -202,12 +250,21 @@ gap: 24px;
     justify-items: center;
     gap: 50px;
 }
+#badge{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.architect img{
+    width: 100%;
+}
+
 
 }
 
 /* media qurey for mediam device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams
+    .teams,
+    .exprience
     {
         flex-direction: column;
     }
@@ -221,5 +278,20 @@ gap: 24px;
     gap: 50px;
     justify-items: center;
 
+}
+.facts-info{
+    text-align: center;
+    
+}
+.fact-description
+{
+    margin: 30px auto;
+}
+.some-facts{
+    margin-top: 0;
+}
+#badge{
+  margin-top: 20px;
+  margin-left: 20px;
 }
 }
